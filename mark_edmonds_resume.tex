@@ -1,0 +1,272 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+
+\newcommand{\specialcell}[2][l]{%
+  \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\lastupdated % Print the Last Updated text at the top right
+
+\namesection{Mark}{Edmonds}{ % Your name
+\urlstyle{same}\url{http://mjedmonds.com} \\ % Your website, LinkedIn profile or other web address
+\href{mailto:mark@mjedmonds.com}{mark@mjedmonds.com} | 913.284.1418 % Your contact information
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.32\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection[UCLA]{University of California,\\ Los Angeles}
+
+\descript{MS in Computer Science} \\
+\location{Spring 2017 \\ Cum. GPA: N/A} \\
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\subsection{University of Dayton}
+\descript{BS in Computer Engineering} \\
+\location{Grad. May 2015, Magna Cum Laude} \\
+Dean's List (7/8 Semesters) \\
+\location{ Cum. GPA: 3.87 \\
+Major GPA: 3.93}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\subsection{Shawnee Mission East High}
+
+\location{Grad. May 2011} \\
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+\section{Links} 
+
+Github:// \href{https://github.com/mjedmonds}{\bf mjedmonds} \\
+LinkedIn:// \href{https://www.linkedin.com/in/mjedmonds}{\bf mjedmonds} \\
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Coursework
+%------------------------------------------------
+
+\section{Coursework}
+
+\subsection{Graduate}
+
+Pattern Recognition and Machine Learning\\
+{\footnotesize \textit{\textbf{Teaching Assistant}}} \\
+Introduction to Computer Science
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\subsection{Undergraduate}
+
+Artificial Intelligence \\
+Operating Systems \\
+Automata Theory\\
+UNIX/Linux Programming \\
+{\footnotesize \textit{\textbf{Teaching Assistant}}} \\
+Electronic Devices Lab\\
+Engineering Innovations
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Skills}
+
+\subsection{Programming}
+
+\location{Over 5000 lines:}
+C++ \textbullet{} C \textbullet{} Python \textbullet{} Shell \textbullet{} \LaTeX\ \\
+\location{Over 1000 lines:}
+Java \textbullet{} Matlab \textbullet{} CUDA \\
+\location{Familiar:}
+Assembly
+
+\sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Research
+%------------------------------------------------
+
+\section{Research}
+
+\subsection{Center for Vision, Cognition, Learning, and Autonomy}
+\descript{Graduate Researcher} \hfill \location{Los Angeles, CA | Sept 2015 – Present} \\ 
+\smallsectionspace
+Recently joined the lab and currently exploring research projects.
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\subsection{Declarative Memory}
+\descript{Head Undergrad Researcher} \hfill \location{Dayton, OH | May 2014 – Sept 2015} \\
+\smallsectionspace % Some whitespace after description and date
+Worked with \textbf{\href{http://act-r.psy.cmu.edu/?post_type=authors&p=10523}{Dr. Scott Douglass}} and \textbf{\href{https://www.udayton.edu/directory/engineering/electrical_and_computer/taha_tarek_m.php}{Prof Tarek Taha}} to accelerate the declarative memory module of the CECEP cognitive architecture (based on \href{http://act-r.psy.cmu.edu/}{ACT-R}). The research focused on leveraging the parallel computing abilities of the CUDA programming platform. One publication published, another publication in writing.
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\subsection{Robotic Arm Brain Machine Interface}
+\descript{Undergrad Researcher} \hfill \location{Dayton, OH | Aug 2014 – May 2015} \\
+\smallsectionspace % Some whitespace after description and date
+Worked in a team of peers to expand the capability of a brain machine interface through EEG signals and a robotic arm. The team implemented additional gestures and improved the universality of the interface. Publication published.
+
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Experience}
+
+\subsection{Air Force Research Lab}
+\descript{Undergraduate Researcher} \hfill \location{Dayton, OH | May 2014 - Sept 2015} \\
+\smallsectionspace
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Conducted Declarative Memory research in a cutting-edge research environment.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\subsection{Garmin}
+\descript{Software Engineering Intern} \hfill \location{Olathe, KS | May 2013 – Aug 2013 } \\
+\begin{tightitemize}
+\item Interned as a member of the Datalink team in the Aviation department of Garmin. 
+\item Contributed to the ACARS protocol for Garmin Avionics software.
+\item Reduced verification testing time by 40\%.
+\item All code was reviewed and pushed to vendor testing facilities.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\subsection{Cristo Rey Kansas City}
+\descript{Tutor and Teacher} \hfill \location{Kansas City, MO | May 2011 – Aug 2012} \\
+\begin{tightitemize}
+\item Pre-calculus and chemistry tutor and teacher at an inner city high school. 
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+
+%------------------------------------------------
+% Publications
+%------------------------------------------------
+
+\section{Publications} 
+
+\begin{tabular}{rll}
+2015 	 & In Writing  & Hardware Accelerated Declarative Memory Systems \\
+ 		 & 			   & through CUDA\\
+2015	 & SNPD 2015   & \href{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7176183}{High Performance Declarative Memory Systems through}\\
+ 		 & 			   & \href{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7176183}{MapReduce}\\
+2015 	 & NAECON 2015 & Brain machine interface using Emotiv EPOC for controlling \\
+		 & 			   & a robotic arm
+\end{tabular}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Societies
+%------------------------------------------------
+
+\section{Societies} 
+
+\begin{tabular}{rll}
+2014 & National & Eta Kappa Nu IEEE Honor Society\\
+2014 & National & Tau Beta Pi Engineering Honor Society\\
+2011 & Boy Scouts & Eagle Scout with over 200 hours of community service\\
+\end{tabular}
+
+\sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
