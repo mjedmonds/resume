@@ -52,8 +52,20 @@ Last Updated on \today % Last Updated text
 %----------------------------------------------------------------------------------------
 
 \newcommand{\namesection}[3]{ % Defines the command for the main heading
+\fontsize{25pt}{45pt} % Font size
+\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 % First name font
+\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2 % Last name font
+\hfill
+\color{headings} % Use the headings color
+\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3 % Contact information font
+\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}} % Horizontal rule
+\vspace{-5pt} % Reduce whitespace after the rule slightly
+}
+
+% centered version of name
+\newcommand{\namesectioncenter}[3]{ % Defines the command for the main heading
 \centering{ % Center the name
-\fontsize{40pt}{60pt} % Font size
+\fontsize{20pt}{40pt} % Font size
 \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 % First name font
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2 % Last name font
 } \\[5pt] % Whitespace between the name and contact information
@@ -72,11 +84,11 @@ Last Updated on \today % Last Updated text
 
 \titlespacing{\section}{0pt}{0pt}{0pt} % Removes the spacing around the main section titles
 \titlespacing{\subsection}{0pt}{0pt}{0pt} % Removes the spacing around the subsections
-\newcommand{\sectionspace}{\vspace{8pt}} % Defines a command to add a set amount of space after sections and subsections
+\newcommand{\sectionspace}{\vspace{5pt}} % Defines a command to add a set amount of space after sections and subsections
 \newcommand{\smallsectionspace}{\vspace{2pt}} % Defines a command to add a set small amount of space after sections and subsections
 
 \titleformat{\section}{ % Customize the large section titles
-\color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{14pt}{20pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 \titleformat{\subsection}{ % Customize the subsections and places worked/studied titles
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
