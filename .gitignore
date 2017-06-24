@@ -1,5 +1,7 @@
 .texpadtmp
-.log
-.fdb_latexmk
-.fls
-.out
+*.log
+*.fdb_latexmk
+*.fls
+*.out
+*.gz
+*.aux
